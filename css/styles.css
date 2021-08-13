@@ -1,0 +1,780 @@
+/*  Mateus de Nuzzi Bragatto */
+
+
+/* Estilos gerais */
+ @font-face {
+    font-family: 'SegoUIext';
+    src: url("../fonts/segoeui.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SegoUIBext';
+    src: url("../fonts/segoeuib.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SegoUILext';
+    src: url("../fonts/segoeuil.ttf") format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+} 
+
+
+
+body{
+    font-family: 'SegoUIext', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+
+/* Menu */
+
+.menu{
+    background: #2574b3;
+    padding: 23px 0;
+}
+
+.menu_container{
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 90%;
+}
+.menu_container::after, .menu_container::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a.menu_logo{
+    display:block;
+    float: left;
+}
+
+.menu_nav{
+    float: right;
+    /* width: 100%;
+    max-width: 950px; */
+}
+
+.menu_nav li{
+    display:inline-block;
+    padding: 0 30px;
+}
+
+#menu_mobile{
+    display: none;
+}
+.menu_nav li:last-child{
+    background-color: #05214e;
+    padding: 0 18px;
+}
+
+.menu_nav a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    /* font-size: 1.30vw; */
+    font-size: 18px;
+}
+
+/* Introdução */
+
+.introducao{
+    width: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),  url("../imgassets/ballpen-blur-close-up-461077.png") no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: auto;
+    margin-bottom: 80px;
+
+
+}
+
+.introducao h1{
+    font-size: 70px;
+    /* font-size: 4vw; */
+    margin-bottom: 30px;
+    padding: 200px 150px 0 170px;
+}
+
+.introducao p{
+    font-size: 30px;
+    /* font-size: 3vw; */
+    line-height: 40px;
+    margin-bottom: 120px;
+    padding: 0px 180px 0 170px;
+}
+
+.introducao a{
+    background-color: #05a3ec;
+    color:white;
+    padding: 20px 57px;
+    /* font-size: 30px; */
+    font-size : 3vw;
+    margin-left: 170px;
+}
+.introducao img{
+    margin-top: 170px;
+    margin-bottom: 50px;
+    margin-left: 70%;
+}
+
+/* Sobre */
+
+.sobre{
+    width: 100%;
+}
+
+
+.sobre h2{
+    font-size: 30px;
+    text-align: center;
+    color: #3571a9;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.sobre_container p{
+    text-align: center;
+    font-size: 20px;
+    margin: 0px 70px 30px 70px;
+    color: #949494;
+}
+
+.sobre_container span{
+    color: #c94d36;
+}
+
+
+
+.sobre_lista1 {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sobre_li{
+    background: black;
+    color: white;
+    display: flex;
+    padding-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+.sobre_lista1 img{
+    padding: 7px;
+    margin-right: 20px;
+}
+
+.sobre_li .texto{
+    width: 100%;
+}
+
+.sobre_li h3{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.sobre_li p{
+    max-width: 400px;
+}
+
+.sobre .li1{
+    background: #0673c2;
+}
+
+.sobre .li2{
+    background: #2d5a94;
+    margin-right: 0;
+}
+
+.sobre .li3{
+    background: #247345;
+}
+
+.sobre .li4{
+    background: #ca4c35;
+    margin-right: 0;
+}
+.sobre .li5{
+    background: #733682;
+}
+
+.sobre .li6{
+    background: #06acf0;
+    margin-right: 0;
+}
+.sobre .li7{
+    background: #0c4bb1;
+}
+
+.sobre .li8{
+    background: #0673c3;
+    margin-right: 0;
+}
+
+.sobre .li9{
+    background: #0693bb;
+}
+
+.sobre .li10{
+    background: #555bab;
+    margin-right: 0;
+}
+
+
+
+.sobre_lista2{
+    display: flex;
+    margin: 0 150px;
+    justify-content: center;
+}
+
+.lista2_li{
+    text-align: center;
+}
+
+
+.lista2_li .circulo{
+    background-color: chartreuse;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.lista2_li1{
+    margin-right: 50px;
+}
+
+.lista2_li2{
+    margin-right: 50px;
+}
+
+.lista2_li1 .circulo img{
+    margin-top: 20%;
+}
+
+
+.lista2_li2 img{
+    margin-top: 23%;
+}
+
+.lista2_li3 img{
+    margin-top: 30%;
+}
+
+.lista2_li1 .circulo{
+    background-color: #7eba06;
+}
+
+.lista2_li2 .circulo{
+    background-color: #06a3ea;
+}
+
+.lista2_li3 .circulo{
+    background-color: #fbbb06;
+}
+
+
+.lista2_li h3{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #7eba06;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.lista2_li2 h3{
+    color:#06a3ea;
+}
+
+.lista2_li3 h3{
+    color:#fbbb06;
+}
+
+.lista2_li h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #dcdcdc;
+    margin: 15px auto;
+}
+
+.lista2_li p{
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.lista2_li a{
+    border: #7eba06 solid;
+    padding: 5px 10px;
+    color: #7eba06;
+    font-weight: bold;
+}
+
+.lista2_li2 a{
+    border-color: #06a3ea;
+    color: #06a3ea;
+}
+.lista2_li3 a{
+    border-color: #fbbb06;
+    color: #fbbb06;
+}
+
+
+
+.sobre_lista3{
+    display: flex;
+    margin: 0 150px 100px 150px;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+.lista3_li{
+    border-left: solid #dcdcdc 4px;
+    border-top: solid #dcdcdc 4px;
+    border-bottom: solid #dcdcdc 4px;
+    text-align: center;
+    display: block;
+}
+
+.lista3_li h3{
+    color:#c94d36;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 30px 0;
+    /* display: block; */
+}
+
+.lista3_li p{
+    color:#949494;
+    margin: 0 40px 30px 40px;
+}
+
+.lista3_li:last-child{
+    border-right: solid #dcdcdc 4px;
+}
+
+
+/* Seção com imagem */
+
+.secaoimagem{
+    width: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),  url("../imgassets/achievement-adult-agreement-1391373.png") no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secaoimagem .texto{
+    max-width: 1300px;
+}
+
+
+.secaoimagem .texto p{
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+}
+
+
+/* Seção contato */
+
+.contato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.contato_texto{
+    max-width: 1300px;
+    margin-bottom: 50px;
+}
+
+.contato_texto p{
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    color: #949494;
+}
+
+/*formulario*/
+
+
+fieldset{
+    background-color: #dcdcdc;
+    padding: 50px;
+}
+
+label{
+    font-family: 'SegoUIext', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3571a9;
+}
+
+.campo{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 50px;
+}
+
+.btn_submit{
+    background-color: #05a3eb;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'SegoUIext', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 50px;
+    width: 500px;
+    color: white;
+}
+
+/* footer*/
+
+.footer{
+    margin-top: 100px;
+}
+
+.footer .logos{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .logos .logo_imagem{
+    margin-right: 5px;
+}
+.footer .logos .logo_escrita{
+    margin-right: 50px;
+}
+
+.footer .logos :last-child{
+    margin-right: 0px;
+}
+
+.footer p{
+    text-align: center;
+    margin: 20px 0;
+    color: #949494;
+}
+
+
+
+
+/* Media Queries */
+
+@media(max-width: 425px){
+    .sobre_li{
+        padding : 10px 20px 10px 20px;
+    }
+    .sobre_lista1 img{
+        padding: 0px;
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+    }
+
+
+
+
+
+    .footer .logo_imagem{
+        width: 30px;
+        height: 30px;
+    }
+    .footer .logo_escrita{
+        height: 30px;
+        width: 100px;
+    }
+    .footer p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 530px){
+    .sobre_li{
+        width: 80%;
+        padding : auto;
+    }
+    .sobre_lista1 h3{
+        font-size: 12px;
+    }
+    .sobre_lista1 p{
+        font-size: 10px;
+    }
+
+    
+}
+
+
+
+
+@media (max-width: 1100px){
+    .sobre_lista1{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .sobre .li1{
+        margin-right: 0;
+    }
+    
+    .sobre .li3{
+        margin-right: 0;
+    }
+    
+
+    .sobre .li5{
+        margin-right: 0;
+    }
+    
+
+    .sobre .li7{
+        margin-right: 0;
+    }
+    
+
+    .sobre .li9{
+        margin-right: 0;
+    }
+
+    
+
+
+    .sobre_lista3{
+        margin: 0 30px 100px 30;
+    }
+    
+
+
+
+
+}
+
+@media (max-width: 1024px){
+    #menu_mobile{
+        display:block;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border:none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburger{
+        width: 20px;
+        border-top: 2.5px solid;
+        display: block;
+    }
+    #hamburger::after, #hamburger::before{
+        content:'';
+        display: block;
+        width: 20px;
+        height: 2.5px;
+        background: black;
+        margin-top: 5px;
+        transition: .3s;
+        position:relative;
+    }
+    .menu_lista{
+        display:block;
+        position: absolute;
+        width: 100%;
+        top: 82px;
+        right: 0px;
+        background: #2574b3;
+        height: 0;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: auto;
+    }
+    #nav.active .menu_lista{
+        /* display: block; */
+        visibility: visible;
+        height: calc(100vh - 82px);
+    }
+    .menu_lista li{
+        display: block;
+        padding: 0;
+        /* background:yellow; */
+    }
+    .menu_nav li:last-child{
+        /* background-color: red; */
+        padding: 0;
+    }
+    .menu_lista a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0,0,0,.05);
+    }
+
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top:-7px;
+    }
+}
+
+
+/* de 0 ate 768 */
+@media (max-width: 768px){
+    .introducao_container{
+        text-align: center;
+    }
+
+    .introducao h1{
+        /* font-size: 70px; */
+        font-size: 10vw;
+        margin-bottom: 30px;
+        /* padding: 200px 150px 0 170px; */
+        padding: 200px 0 0 0;
+        text-align: center;
+    }
+    
+    .introducao p{
+        /* font-size: 30px; */
+        font-size: 7vw;
+        padding: 0;
+        text-align: center;
+    }
+
+    .introducao a{
+        text-align-last: center;
+        padding: 20px 10%;
+        /* font-size: 30px; */
+        font-size : 5vw;
+        margin: 0;
+    }
+
+    .introducao_imagem{
+        width: 100%;
+        text-align:center;
+    }
+    .introducao img{
+        margin-left: 0;
+    }
+
+
+
+
+
+
+
+
+
+    .sobre_lista2{
+        /* .sobre_lista2{
+            display: flex;
+            margin: 0 150px;
+            justify-content: center;
+        } */
+        flex-wrap: wrap;
+        margin: 0 10%;
+    }
+
+    .lista2_li{
+        margin-bottom: 100px;
+        margin-right: 0;
+    }
+
+
+
+
+
+
+
+    .sobre_lista3{
+        flex-wrap: wrap;
+        
+    }
+
+    .lista3_li{
+        border-left: solid #dcdcdc 4px;
+        border-top: solid #dcdcdc 4px;
+        border-bottom: 0px;
+        border-right: solid #dcdcdc 4px;
+        text-align: center;
+        display: block;
+    }
+    .lista3_li_3{
+        border-bottom: solid #dcdcdc 4px;
+    }
+    .secaoimagem .texto p{
+        font-size: 7vw;
+        line-height: 70px;
+    }
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    fieldset{
+        /* text-align: center; */
+        background-color: #dcdcdc;
+        padding: auto;
+    }
+    
+    label{
+        font-family: 'SegoUIext', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #3571a9;
+        /* text-align: left; */
+    }
+    
+    .campo{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 90%;
+        height: 7%;
+    }
+    
+    .btn_submit{
+        background-color: #05a3eb;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'SegoUIext', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 50px;
+        width: 500px;
+        color: white;
+    }
+}
